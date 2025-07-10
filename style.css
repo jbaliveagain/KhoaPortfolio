@@ -1,0 +1,275 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('/asset/img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+/* Top Header */
+.top-header {
+  background-color: #e2e2e2;
+  padding: 20px 40px;
+  font-family: 'Arial', sans-serif;
+   margin-left: var(#05a696);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+
+.top-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.top-header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  border-bottom: 1px solid transparent;
+}
+
+.top-header nav a:hover {
+  border-bottom: 1px solid black;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e2e2e2;
+  padding: 60px 40px;
+  margin-left: 280px; /* 👈 Match sidebar width */
+  box-sizing: border-box;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-content .text h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  max-width: 600px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+.circle-bg {
+  background-color: #aac8ff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Intro Section */
+.intro-section {
+  background-color: #f5f5f5;
+  padding: 60px 40px;
+}
+
+.intro-text {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.intro-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Bottom Section: Sidebar + Card */
+.bottom-section {
+  display: flex;
+  margin-top: 0;
+}
+
+/* Sidebar (your original code remains unchanged) */
+.sidebar {
+  position: fixed; /* Make sidebar sticky */
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #05a696;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: right;
+  font-family: 'Yeseva One', serif;
+  z-index: 999;
+}
+.sidebar .profile {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  display: block;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.icons a img {
+  width: 24px;
+  height: 24px;
+}
+.icons a i {
+  color: white;
+  margin-right: 10px;
+  transition: color 0.2s ease;
+}
+
+.icons a:hover i {
+  color: #ddd;
+}
+
+.sidebar h1 {
+  font-size: 22px;
+  margin: 0 0 10px;
+  font-weight: bold;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.bio {
+  font-size: 15px;
+  color: #fff;
+  margin: 10px 0 20px;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+/* Card Right of Sidebar */
+.main-content {
+  flex: 1;
+  background-color: #dbc6b9;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px; 
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+}
+
+.round-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-section {
+  max-width: 600px;
+  color: #2d0d0d;
+}
+
+.text-section h2 {
+  font-family: 'Yeseva One', serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.logo-marquee {
+  overflow: hidden;
+  background: #fff;
+  padding: 30px 0;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo-strip {
+  display: flex;
+  gap: 40px;
+  animation: pingpong 8s ease-in-out infinite alternate;
+}
+
+.logo-strip img {
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.logo-strip img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes pingpong {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
